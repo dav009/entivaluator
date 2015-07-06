@@ -18,7 +18,7 @@ In order to evaluate entity linking systems, you need to convert dbpedia/wikiped
 
 1. `cd resources`
 2. `wget -O wiki_title_to_id.json.tgz -v https://googledrive.com/host/0B7wSO4JK9zbFeHRTYmJGa2ZjTU0`
-3. `tar -xzvf wiki_title_to_id.json.tgz`
+3. `gunzip -c 0B7wSO4JK9zbFeHRTYmJGa2ZjTU0.gtar |tar xvf -`
 
 Note that the program presupposes the file to be named `wiki_title_to_id.json`, so make sure that's the correct filename of the json file. Dexter-eval comes with the iitb dataset, you can unpack that file and use it, but if you want to download a version of that, you can simply unpack the version that comes in the resources folder.
 
